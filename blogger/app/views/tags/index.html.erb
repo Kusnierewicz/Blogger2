@@ -1,11 +1,9 @@
-<h1>
+<h1>Here are all available tags:</h1>
 	<ul id="tags">
 		<% @tags.each do |tag| %>
 			<li>
-				<%= link_to tag.title, tag_path(tag), class: 'tag_title' %>
+				<%= link_to tag.name, tag_path(tag) %>
 			</li>
 		<% end %>
-		
 	</ul>
-	<%= link_to "<< Back to Articles List", articles_path %>
-</h1>
+	
